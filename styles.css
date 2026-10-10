@@ -616,3 +616,56 @@ html[lang="hi"] .demo-otp strong { letter-spacing: 5px !important; }
   .no-print { display: none !important; }
   .receipt { border-radius: 0; padding: 0; }
 }
+
+.stat:nth-child(6)::after { content: "🏢"; }
+.add-panel { margin-top: 1.5rem; }
+.wa-cell { white-space: nowrap; }
+.atabs { display: flex; gap: .3rem; flex-wrap: wrap; width: fit-content; max-width: 100%; margin-bottom: 1.8rem; padding: 4px; background: var(--tabs-bg); border-radius: 22px; }
+.atab {
+  border: 0; background: none; padding: .55rem 1.2rem; border-radius: 999px; cursor: pointer;
+  font: 600 .9rem "Poppins", "Noto Sans Devanagari", sans-serif; color: var(--muted); transition: .2s;
+}
+.atab:hover { color: var(--text); }
+.atab.active { background: var(--grad); color: #fff; box-shadow: 0 4px 14px rgba(236, 72, 153, .35); }
+#order-dialog { width: min(780px, 94vw); }
+.od-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: .8rem; margin-bottom: 1.2rem; }
+.od-box { display: grid; gap: .3rem; align-content: start; padding: .9rem 1rem; border: 1px solid var(--line); border-radius: 14px; background: var(--glass-2); font-size: .9rem; overflow-wrap: anywhere; }
+.od-box h4 { font: 600 .72rem "Poppins", "Noto Sans Devanagari", sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin-bottom: .2rem; }
+.od-box .status-select { margin-top: .3rem; }
+.od-total { display: flex; justify-content: space-between; align-items: baseline; padding: .8rem 0; color: var(--muted); }
+.od-total strong { font: 800 1.5rem "Playfair Display", "Noto Serif Devanagari", serif; color: var(--gold-2); }
+.alert-box { margin-bottom: 1.2rem; padding: .9rem 1.1rem; border: 1px solid color-mix(in srgb, var(--err) 50%, transparent); border-radius: 14px; background: color-mix(in srgb, var(--err) 12%, transparent); color: var(--text); }
+.alert-box ul { list-style: none; display: grid; gap: .5rem; margin-top: .6rem; }
+.alert-box li { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; font-size: .9rem; }
+.cancel-by { color: var(--err); font-weight: 600; }
+tr.cancelled-row td { background: color-mix(in srgb, var(--err) 6%, transparent); }
+.od-payact { margin-top: .2rem; }
+.od-warn { color: var(--err); font-size: .8rem; font-weight: 500; }
+.badge.pay-unpaid { background: color-mix(in srgb, var(--err) 14%, transparent); color: var(--err); border-color: color-mix(in srgb, var(--err) 40%, transparent); }
+.badge.pay-submitted { background: rgba(var(--gold-rgb), .14); color: var(--gold-2); border-color: rgba(var(--gold-rgb), .45); }
+.oc-btns { display: inline-flex; gap: .5rem; flex-wrap: wrap; }
+#pay-dialog { width: min(440px, 94vw); }
+#pay-body { display: grid; gap: .9rem; }
+.pay-amount { display: grid; text-align: center; gap: .1rem; }
+.pay-amount span { color: var(--muted); font-size: .85rem; }
+.pay-amount strong { font: 800 2.1rem "Playfair Display", "Noto Serif Devanagari", serif; background: var(--grad-gold); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.pay-amount small { color: var(--muted); }
+.pay-or { text-align: center; }
+.pay-qr { background: #fff; padding: 8px; border-radius: 14px; width: fit-content; margin: 0 auto; line-height: 0; }
+.pay-qr svg { width: 200px; height: 200px; }
+.pay-test { display: grid; gap: .4rem; }
+.pay-hold { text-align: center; }
+.pay-to { text-align: center; font-size: .9rem; overflow-wrap: anywhere; }
+.od-actions { display: flex; gap: .6rem; flex-wrap: wrap; }
+.buy-qty, .cart-qty { width: 76px; flex: none; }
+.qty-row .buy-qty, .cart-line .cart-qty { padding: .5rem .7rem; font-size: .85rem; }
+.product .buy-qty { padding: .3rem .5rem; font-size: .8rem; }
+.check { display: flex; align-items: center; gap: .6rem; }
+.check input { width: auto; accent-color: var(--gold); }
+.pay-pick { border: 0; display: grid; gap: .5rem; min-width: 0; }
+.role input:disabled + span { opacity: .45; cursor: not-allowed; }
+.role:has(input:disabled) { cursor: not-allowed; }
+.closed-note { margin-bottom: 1rem; }
+.wa-cell .btn { margin-right: .35rem; }
+a.wa-btn { text-decoration: none; }
+.wa-btn[aria-disabled="true"] { opacity: .4; cursor: not-allowed; }

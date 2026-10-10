@@ -1,0 +1,33 @@
+{
+  "name": "wholesale-market-server",
+  "version": "2.0.0",
+  "private": true,
+  "description": "API server for Wholesale Market (Node + PostgreSQL)",
+  "main": "src/index.js",
+  "scripts": {
+    "setup-env": "node scripts/setup-env.js",
+    "db:init": "node scripts/init-db.js",
+    "db:demo": "node scripts/init-db.js --demo",
+    "start": "node src/index.js",
+    "test": "node --test \"test/**/*.test.js\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.23.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "jsdom": "^30.1.2",
+    "supertest": "^7.3.1"
+  }
+}

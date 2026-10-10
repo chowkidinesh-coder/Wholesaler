@@ -49,7 +49,7 @@
     <section class="auth container" id="top">
       <div class="auth-hero">
         <span class="eyebrow" data-i18n="hero.eyebrow">Trade, elevated</span>
-        <h1 data-i18n-html="hero.title">Buy &amp; sell in <em>bulk</em>,<br>beautifully.</h1>
+        <h1 data-i18n-html="hero.title">Buy in <em>bulk</em>,<br>delivered to your door.</h1>
         <p class="hero-tag" data-i18n="hero.tag">Shop direct from wholesalers. Buy in bulk at wholesale prices.</p>
       </div>
 
@@ -60,16 +60,8 @@
         </div>
 
         <form id="auth-form" novalidate>
-          <div class="role-pick" role="radiogroup" data-i18n-aria="aria.accountType" aria-label="Account type">
-            <label class="role"><input type="radio" name="role" value="customer" checked><span>&#128722; <span data-i18n="role.customer">Customer</span></span></label>
-            <label class="role"><input type="radio" name="role" value="wholesaler"><span>&#127970; <span data-i18n="role.wholesaler">Wholesaler</span></span></label>
-          </div>
-
           <label class="reg-only" hidden><span class="lbl" data-i18n="f.name">Your name</span>
             <input type="text" name="name" autocomplete="name">
-          </label>
-          <label class="reg-only wholesaler-only" hidden><span class="lbl" data-i18n="f.store">Store name</span>
-            <input type="text" name="store" data-i18n-ph="ph.store" placeholder="e.g. Happy Toys Store">
           </label>
           <label><span class="lbl" data-i18n="f.email">Email</span>
             <input type="email" name="email" autocomplete="email" required>
@@ -78,16 +70,15 @@
             <input type="tel" name="mobile" autocomplete="tel" data-i18n-ph="ph.mobile" placeholder="e.g. 9876543210 or +919876543210" inputmode="tel">
           </label>
           <label><span class="lbl" data-i18n="f.password">Password</span>
-            <input type="password" name="password" autocomplete="current-password" required minlength="4">
+            <input type="password" name="password" autocomplete="current-password" required minlength="6">
           </label>
           <label class="reg-only" hidden><span class="lbl" data-i18n="f.confirm">Confirm password</span>
-            <input type="password" name="confirm" autocomplete="new-password" minlength="4">
+            <input type="password" name="confirm" autocomplete="new-password" minlength="6">
           </label>
 
           <button type="submit" class="btn btn-block" id="auth-submit">Log in</button>
           <button type="button" class="link-btn" id="forgot-link" data-i18n="auth.forgot">Forgot password?</button>
           <p class="form-msg" id="auth-msg" role="status"></p>
-          <p class="demo-hint" data-i18n-html="auth.demoHint">Demo logins: <code>customer@demo.com</code> or <code>wholesaler@demo.com</code> &middot; password <code>demo123</code></p>
         </form>
 
         <!-- FORGOT PASSWORD (OTP) -->
@@ -115,10 +106,10 @@
               <input type="text" name="otp" inputmode="numeric" maxlength="6" autocomplete="one-time-code" required>
             </label>
             <label><span data-i18n="reset.newPass">New password</span>
-              <input type="password" name="newpass" autocomplete="new-password" minlength="4" required>
+              <input type="password" name="newpass" autocomplete="new-password" minlength="6" required>
             </label>
             <label><span data-i18n="reset.confirmNew">Confirm new password</span>
-              <input type="password" name="newpass2" autocomplete="new-password" minlength="4" required>
+              <input type="password" name="newpass2" autocomplete="new-password" minlength="6" required>
             </label>
             <button type="submit" class="btn btn-block" data-i18n="reset.submit">Reset password</button>
             <button type="button" class="link-btn" id="resend-otp">Resend OTP</button>
@@ -133,15 +124,15 @@
     <section class="landing container" id="how">
       <div class="section-head">
         <span class="eyebrow" data-i18n="how.eyebrow">How it works</span>
-        <h2 data-i18n-html="how.title">Two sides, <em>one</em> marketplace</h2>
+        <h2 data-i18n-html="how.title">Wholesale, <em>delivered</em> to your door</h2>
       </div>
       <div class="split">
         <article class="feature">
-          <div class="feature-tag" data-i18n="how.w.tag">For wholesalers</div>
+          <div class="feature-tag" data-i18n="how.w.tag">What we do</div>
           <ol class="steps">
-            <li><b data-i18n="how.w.1">Create your store</b></li>
-            <li><b data-i18n="how.w.2">List products</b></li>
-            <li><b data-i18n="how.w.3">Track sales</b></li>
+            <li><b data-i18n="how.w.1">Collect wholesale products</b></li>
+            <li><b data-i18n="how.w.2">Confirm your order</b></li>
+            <li><b data-i18n="how.w.3">Deliver to your door</b></li>
           </ol>
         </article>
         <article class="feature">
@@ -163,9 +154,7 @@
       </div>
       <div class="cat-grid">
         <div class="cat"><span>&#129528;</span><b data-i18n="cat.Toys">Toys</b></div>
-        <div class="cat"><span>&#127911;</span><b data-i18n="cat.Electronics">Electronics</b></div>
-        <div class="cat"><span>&#128087;</span><b data-i18n="cat.Fashion">Fashion</b></div>
-        <div class="cat"><span>&#128132;</span><b data-i18n="cat.Beauty">Beauty</b></div>
+        <div class="cat"><span>&#9999;&#65039;</span><b data-i18n="cat.Stationery">Stationery</b></div>
       </div>
     </section>
 
@@ -181,67 +170,134 @@
       </div>
       <div class="cta">
         <h2 data-i18n="cta.title">Ready to get started?</h2>
-        <p data-i18n="cta.text">Create a free account as a wholesaler or a customer.</p>
+        <p data-i18n="cta.text">Create a free customer account.</p>
         <a href="#top" class="btn" id="cta-register" data-i18n="cta.btn">Create your account</a>
       </div>
     </section>
   </main>
 
-  <!-- WHOLESALER DASHBOARD -->
-  <main id="wholesaler-view" class="container page" hidden>
+  <!-- ADMIN PANEL -->
+  <main id="admin-view" class="container page" hidden>
     <div class="page-head">
-      <span class="eyebrow" data-i18n="w.eyebrow">Wholesaler workspace</span>
-      <h2 data-i18n-html="w.title">Your store <em>dashboard</em></h2>
-      <p data-i18n="w.sub">List products, set your own price and the quantity you have available, and track sales.</p>
+      <span class="eyebrow" data-i18n="w.eyebrow">Admin panel</span>
+      <h2 data-i18n-html="w.title">Wholesale <em>control room</em></h2>
+      <p data-i18n="w.sub">Add wholesalers, list their products with your price and stock, and manage every order.</p>
     </div>
 
-    <div class="stats-row" id="w-stats"></div>
+    <div class="atabs" id="admin-tabs" role="tablist" data-i18n-aria="aria.adminTabs" aria-label="Admin sections">
+      <button type="button" class="atab active" role="tab" aria-selected="true" data-tab="orders" data-i18n="tab.orders">Orders</button>
+      <button type="button" class="atab" role="tab" aria-selected="false" data-tab="wholesalers" data-i18n="tab.wholesalers">Wholesalers</button>
+      <button type="button" class="atab" role="tab" aria-selected="false" data-tab="products" data-i18n="tab.products">Products</button>
+      <button type="button" class="atab" role="tab" aria-selected="false" data-tab="rules" data-i18n="tab.rules">Rules</button>
+      <button type="button" class="atab" role="tab" aria-selected="false" data-tab="reviews" data-i18n="tab.reviews">Reviews</button>
+    </div>
 
-    <section class="panel">
-      <h3 data-i18n="add.title">Add a product</h3>
-      <form id="product-form" class="product-form" novalidate>
-        <label><span data-i18n="f.pname">Product name</span>
-          <input type="text" name="pname" data-i18n-ph="ph.pname" placeholder="e.g. Toys" required maxlength="40">
-        </label>
-        <label><span data-i18n="f.store">Store name</span>
-          <input type="text" name="pstore" required maxlength="40">
-        </label>
-        <label><span data-i18n="f.category">Category</span>
-          <select name="pcat" class="cat-select"></select>
-        </label>
-        <label><span data-i18n="f.qty">Quantity available</span>
-          <input type="number" name="pqty" value="20" min="1" max="1000000" step="1" required>
-        </label>
-        <label><span data-i18n="f.price">Price per unit (Rs)</span>
-          <input type="number" name="pprice" value="100" min="0.01" max="1000000" step="0.01" required>
-        </label>
-        <label><span data-i18n="f.photos">Product photos (max 3)</span>
-          <input type="file" name="pimage" accept="image/*" multiple>
-        </label>
-        <label class="wide"><span data-i18n="f.desc">Description (optional)</span>
-          <textarea name="pdesc" rows="2" maxlength="300" data-i18n-ph="ph.desc" placeholder="A short description customers will see"></textarea>
-        </label>
-        <button type="submit" class="btn" data-i18n="add.btn">Add product</button>
-        <p class="form-msg" id="product-msg" role="status"></p>
-      </form>
+    <!-- Orders -->
+    <section class="admin-tab" data-tab="orders">
+      <div class="stats-row" id="w-stats"></div>
+      <div id="w-alerts"></div>
+      <div class="list-head">
+        <h3 class="section-title" data-i18n="w.orders">Orders</h3>
+        <button type="button" class="btn btn-outline btn-small" id="csv-btn">&#11015; <span data-i18n="csv.btn">Download CSV</span></button>
+      </div>
+      <div class="panel table-panel" id="w-orders"></div>
     </section>
 
-    <div class="list-head">
-      <h3 class="section-title" data-i18n="w.products">Your products</h3>
-      <input type="search" id="w-search" class="search" data-i18n-ph="search.ph" placeholder="Search by product or store name" data-i18n-aria="search.aria" aria-label="Search products by product name or store name" autocomplete="off">
-    </div>
-    <div class="product-grid" id="w-products"></div>
+    <!-- Wholesalers -->
+    <section class="admin-tab" data-tab="wholesalers" hidden>
+      <section class="panel">
+        <h3 data-i18n="wh.title">Wholesalers</h3>
+        <form id="wholesaler-form" class="product-form" novalidate>
+          <label><span data-i18n="wh.store">Store name</span>
+            <input type="text" name="wstore" required maxlength="40">
+          </label>
+          <label><span data-i18n="wh.contact">Contact person</span>
+            <input type="text" name="wname" required maxlength="60">
+          </label>
+          <label><span data-i18n="f.mobile">Mobile number</span>
+            <input type="tel" name="wmobile" inputmode="tel" required data-i18n-ph="ph.mobile" placeholder="e.g. 9876543210 or +919876543210">
+          </label>
+          <label class="wide"><span data-i18n="wh.address">Address (optional)</span>
+            <input type="text" name="waddr" maxlength="200">
+          </label>
+          <div class="edit-actions">
+            <button type="submit" class="btn" id="wh-submit" data-i18n="wh.add">Add wholesaler</button>
+            <button type="button" class="btn btn-outline" id="wh-cancel" data-i18n="wh.cancel" hidden>Cancel</button>
+          </div>
+          <p class="form-msg" id="wh-msg" role="status"></p>
+        </form>
+        <div class="table-wrap" id="wh-list"></div>
+      </section>
+    </section>
 
-    <div class="list-head">
-      <h3 class="section-title" data-i18n="w.orders">Orders received</h3>
-      <button type="button" class="btn btn-outline btn-small" id="csv-btn">&#11015; <span data-i18n="csv.btn">Download CSV</span></button>
-    </div>
-    <div class="panel table-panel" id="w-orders"></div>
+    <!-- Products -->
+    <section class="admin-tab" data-tab="products" hidden>
+      <section class="panel">
+        <h3 data-i18n="add.title">Add a product</h3>
+        <form id="product-form" class="product-form" novalidate>
+          <label><span data-i18n="f.pname">Product name</span>
+            <input type="text" name="pname" data-i18n-ph="ph.pname" placeholder="e.g. Toys" required maxlength="40">
+          </label>
+          <label><span data-i18n="f.wholesaler">Wholesaler</span>
+            <select name="pwholesaler" class="wh-select" required></select>
+          </label>
+          <label><span data-i18n="f.category">Category</span>
+            <select name="pcat" class="cat-select"></select>
+          </label>
+          <label><span data-i18n="f.qty">Quantity available</span>
+            <input type="number" name="pqty" value="20" min="1" max="1000000" step="1" required>
+          </label>
+          <label><span data-i18n="f.price">Price per unit (Rs)</span>
+            <input type="number" name="pprice" value="100" min="0.01" max="1000000" step="0.01" required>
+          </label>
+          <label><span data-i18n="f.photos">Product photos (max 3)</span>
+            <input type="file" name="pimage" accept="image/*" multiple>
+          </label>
+          <label class="wide"><span data-i18n="f.desc">Description (optional)</span>
+            <textarea name="pdesc" rows="2" maxlength="300" data-i18n-ph="ph.desc" placeholder="A short description customers will see"></textarea>
+          </label>
+          <button type="submit" class="btn" data-i18n="add.btn">Add product</button>
+          <p class="form-msg" id="product-msg" role="status"></p>
+        </form>
+      </section>
 
-    <div class="list-head">
-      <h3 class="section-title" data-i18n="w.reviews">Customer reviews</h3>
-    </div>
-    <div class="panel" id="w-reviews"></div>
+      <div class="list-head">
+        <h3 class="section-title" data-i18n="w.products">All products</h3>
+        <input type="search" id="w-search" class="search" data-i18n-ph="search.ph" placeholder="Search by product or store name" data-i18n-aria="search.aria" aria-label="Search products by product name or store name" autocomplete="off">
+      </div>
+      <div class="product-grid" id="w-products"></div>
+    </section>
+
+    <!-- Rules -->
+    <section class="admin-tab" data-tab="rules" hidden>
+      <section class="panel">
+        <h3 data-i18n="rules.title">COD &amp; delivery rules</h3>
+        <form id="rules-form" class="product-form" novalidate>
+          <label><span data-i18n="rules.upiId">UPI ID (customers pay to this)</span>
+            <input type="text" name="upiId" maxlength="60" required autocomplete="off" placeholder="name@bank">
+          </label>
+          <label><span data-i18n="rules.upiName">Payee name (shown in the UPI app)</span>
+            <input type="text" name="upiName" maxlength="40" autocomplete="off">
+          </label>
+          <label><span data-i18n="rules.limit">Minimum order amount for COD (Rs)</span>
+            <input type="number" name="codMin" min="0" max="1000000" step="1" required>
+          </label>
+          <label class="wide"><span data-i18n="rules.pins">Delivery PIN codes (comma separated; empty = deliver everywhere)</span>
+            <textarea name="pincodes" rows="2" data-i18n-ph="ph.pins" placeholder="e.g. 411001, 411002, 411014"></textarea>
+          </label>
+          <div class="edit-actions"><button type="submit" class="btn" data-i18n="rules.save">Save rules</button></div>
+          <p class="form-msg" id="rules-msg" role="status"></p>
+        </form>
+      </section>
+    </section>
+
+    <!-- Reviews -->
+    <section class="admin-tab" data-tab="reviews" hidden>
+      <div class="list-head first">
+        <h3 class="section-title" data-i18n="w.reviews">Customer reviews</h3>
+      </div>
+      <div class="panel" id="w-reviews"></div>
+    </section>
   </main>
 
   <!-- CUSTOMER SHOP -->
@@ -289,9 +345,6 @@
           <label><span data-i18n="f.mobile">Mobile number</span>
             <input type="tel" name="mobile" autocomplete="tel" inputmode="tel" required>
           </label>
-          <label id="profile-store-label"><span data-i18n="f.store">Store name</span>
-            <input type="text" name="store" maxlength="40">
-          </label>
           <label><span data-i18n="p.address">Address</span>
             <textarea name="address" rows="3" maxlength="200" autocomplete="street-address" data-i18n-ph="ph.addrProfile" placeholder="House no, street, city, PIN code"></textarea>
           </label>
@@ -307,10 +360,10 @@
             <input type="password" name="current" autocomplete="current-password" required>
           </label>
           <label><span data-i18n="reset.newPass">New password</span>
-            <input type="password" name="newpass" autocomplete="new-password" minlength="4" required>
+            <input type="password" name="newpass" autocomplete="new-password" minlength="6" required>
           </label>
           <label><span data-i18n="reset.confirmNew">Confirm new password</span>
-            <input type="password" name="newpass2" autocomplete="new-password" minlength="4" required>
+            <input type="password" name="newpass2" autocomplete="new-password" minlength="6" required>
           </label>
           <button type="submit" class="btn" data-i18n="p.update">Update password</button>
           <p class="form-msg" id="password-msg" role="status"></p>
@@ -383,8 +436,8 @@
         <label><span data-i18n="f.pname">Product name</span>
           <input type="text" name="pname" required maxlength="40">
         </label>
-        <label><span data-i18n="f.store">Store name</span>
-          <input type="text" name="pstore" required maxlength="40">
+        <label><span data-i18n="f.wholesaler">Wholesaler</span>
+          <select name="pwholesaler" class="wh-select" required></select>
         </label>
         <label><span data-i18n="f.category">Category</span>
           <select name="pcat" class="cat-select"></select>
@@ -422,13 +475,23 @@
     </div>
   </dialog>
 
+  <dialog id="order-dialog" aria-label="Order details">
+    <div class="dlg-head"><h3 data-i18n="od.title">Order details</h3><button type="button" class="dlg-x" data-close data-i18n-aria="dlg.close" aria-label="Close">&times;</button></div>
+    <div class="dlg-body" id="order-body"></div>
+  </dialog>
+
+  <dialog id="pay-dialog" aria-label="Pay by UPI">
+    <div class="dlg-head"><h3 data-i18n="pay.title">Pay by UPI</h3><button type="button" class="dlg-x" data-close data-i18n-aria="dlg.close" aria-label="Close">&times;</button></div>
+    <div class="dlg-body" id="pay-body"></div>
+  </dialog>
+
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <footer class="site-footer">
     <div class="container foot">
       <div>
         <a href="#" class="logo foot-logo">Wholesale <span>Market</span></a>
-        <p data-i18n="foot.tagline">Buy and sell in bulk, beautifully.</p>
+        <p data-i18n="foot.tagline">Buy in bulk, delivered to your door.</p>
       </div>
       <div class="foot-right">
         <a href="#" class="foot-link" data-go="help" data-i18n="foot.help">Help &amp; FAQ</a>
@@ -437,6 +500,7 @@
     </div>
   </footer>
 
+  <script src="qrcode.js"></script>
   <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
